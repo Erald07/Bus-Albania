@@ -20,8 +20,9 @@
     @vite('resources/css/app.css')
 
     {{-- Owl Carousel --}}
-    <link rel="stylesheet" href="{{ asset('frontend/css/owl.carousel.min.css') }} ">
-    <link rel="stylesheet" href="{{ asset('frontend/css/owl.theme.default.min.css') }} ">
+    {{-- <link rel="stylesheet" href="{{ asset('frontend/css/owl.carousel.min.css') }} ">
+    <link rel="stylesheet" href="{{ asset('frontend/css/owl.theme.default.min.css') }} "> --}}
+    <link rel="stylesheet" href="{{ asset('frontend/css/carousel.css') }}">
 
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
 
@@ -47,6 +48,9 @@
     <script src="{{ asset('frontend/js/bootstrap.bundle.min.js') }}"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script src="{{ asset('frontend/js/carousel.js') }}"></script>
+
     @if(session('status'))
         <script>
             swal(" {{ session('status') }} ");
