@@ -11,17 +11,9 @@
         @yield('title')
     </title>
 
-    <!-- Fonts -->
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    {{-- <link rel="stylesheet" href="{{ asset('frontend/css/custom.css') }} ">
-    <link rel="stylesheet" href="{{ asset('frontend/css/bootstrap.css') }} "> --}}
     @vite('resources/css/app.css')
 
     {{-- Owl Carousel --}}
-    {{-- <link rel="stylesheet" href="{{ asset('frontend/css/owl.carousel.min.css') }} ">
-    <link rel="stylesheet" href="{{ asset('frontend/css/owl.theme.default.min.css') }} "> --}}
     <link rel="stylesheet" href="{{ asset('frontend/css/carousel.css') }}">
 
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
@@ -31,8 +23,7 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Roboto&display=swap" rel="stylesheet">
 
     {{-- Font Awesome --}}
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
