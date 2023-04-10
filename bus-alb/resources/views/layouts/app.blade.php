@@ -1,24 +1,86 @@
-<nav class="h-[550px] w-full bg-[url('https://upload.wikimedia.org/wikipedia/commons/b/b7/Monumento_a_Skanderbeg%2C_Tirana%2C_Albania%2C_2014-04-17%2C_DD_02.JPG')] bg-center bg-cover bg-no-repeat">
-    <nav class="h-[550px] w-full bg-[url('https://www.barcelonabusturistic.cat/themes/custom/tmb/assets/img/layout/bbt-a01-bg-overlay-tablet.jpg')] bg-center bg-cover bg-no-repeat opacity-60">
-        <div class="container justify-between pt-8 flex">
-            <div class="logo">
-                <h1 class="text-center uppercase bg-clip-text text-transparent bg-gradient-to-r from-pink-400 to-violet-400 font-extrabold"><span class="text-3xl font-bold">open</span><br><span class="text-5xl font-bold">bus</span><br><span class="text-md text-right font-medium">albania</span></h1>
-            </div>
-            <div class="text-lg justify-between flex items-center space-x-3">
-                <div class="contact">
-                    <h1>Information</h1>
+<!doctype html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
+    <title>{{ config('app.name', 'Laravel') }}</title>
+
+    {{-- Links --}}
+    <link rel="stylesheet" href="{{ asset('frontend/css/bootstrap.css') }}">
+
+
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
+
+    @vite('resources/css/app.css')
+</head>
+<body>
+    <div id="app">
+        {{-- <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm"> --}}
+            <div class="container">
+                {{-- <a class="navbar-brand" href="{{ url('/') }}">
+                    {{ config('app.name', 'Laravel') }}
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+                    <span class="navbar-toggler-icon"></span>
+                </button> --}}
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Left Side Of Navbar -->
+                    <ul class="navbar-nav me-auto">
+
+                    </ul>
+
+                    <!-- Right Side Of Navbar -->
+                    <ul class="navbar-nav ms-auto">
+                        <!-- Authentication Links -->
+                        @guest
+                            {{-- @if (Route::has('login'))
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                </li>
+                            @endif
+
+                            @if (Route::has('register'))
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                </li>
+                            @endif --}}
+                        @else
+                            <li class="nav-item dropdown">
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    {{ Auth::user()->name }}
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
+                                    </a>
+
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                        @csrf
+                                    </form>
+                                </div>
+                            </li>
+                        @endguest
+                    </ul>
                 </div>
-                <div class="login bg-clip-content bg-transparent bg-gradient-to-r from-secondary to-primary rounded-full">
-                    <button class="text-white py-2 px-6">Login</button>
-                </div>
             </div>
-        </div>
-        <div class="container pt-24 text-center text-white">
-            <h1 class="uppercase text-5xl font-bold">openbus albania</h1>
-            <p class="mt-3">Barcelona is a vibrant and drivers city with a rich history and culture , so there are many ways to <br> get to know it. Here are some suggestions.</p>
-        </div>
-        <div class="buy bg-clip-content bg-transparent bg-gradient-to-r from-secondary to-primary rounded-full mt-20 w-[180px] mx-auto text-center">
-            <button class="text-white py-2 px-6 uppercase text-xl font-medium">buy now</button>
-        </div>
-    </nav>
-</nav>
+        {{-- </nav> --}}
+
+        <main class="py-4">
+            @yield('content')
+        </main>
+    </div>
+
+    {{-- Scripts --}}
+    <script src="{{ asset('frontend/js/bootstrap.bundle.min.js') }}"></script>
+</body>
+</html>
