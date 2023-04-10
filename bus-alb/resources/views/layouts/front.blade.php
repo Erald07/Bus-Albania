@@ -15,6 +15,7 @@
 
     {{-- Owl Carousel --}}
     <link rel="stylesheet" href="{{ asset('frontend/css/carousel.css') }}">
+    <link rel="stylesheet" href="{{ asset('frontend/css/carouselVanilla.css') }}">
 
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
 
@@ -27,7 +28,7 @@
 </head>
 
 <body>
-    @include('layouts.inc.frontnavbar')
+    {{-- @include('layouts.inc.frontnavbar') --}}
 
     <div class="content">
         @yield('content')
@@ -42,6 +43,7 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
     <script src="{{ asset('frontend/js/carousel.js') }}"></script>
+    <script src="{{ asset('frontend/js/carouselVanilla.js') }}"></script>
 
     @if(session('status'))
         <script>

@@ -4,16 +4,22 @@
     Welcome to E-Shop
 @endsection
 
+@include('layouts.inc.frontnavbar')
+
 @section('content')
 
 <div class="bg-gray-100 pb-20">
     <div class="container">
         <div class="flex-wrap flex justify-center space-x-6 -translate-y-8">
             <div class="bg-white px-12 py-5 shadow-2xl">
-                <span class="text-xl font-medium text-secondary">Tirane</span>
+                <a href="{{ url('') }}">
+                    <span class="text-xl font-medium text-secondary">Tirane</span>
+                </a>
             </div>
             <div class="bg-white px-12 py-5 shadow-2xl">
-                <span class="text-xl font-medium text-secondary">Durres</span>
+                <a href="{{ url('city') }}">
+                    <span class="text-xl font-medium text-secondary">Durres</span>
+                </a>
             </div>
         </div>
     </div>
@@ -93,54 +99,19 @@
                             </div>
                             <div class="border-b border-gray-200 py-1">
                                 <h1>Adult 13 to 64 years</h1>
-                                <p><span class="font-medium">$26.50 </span><span class="text-gray-500 line-through">$20.50</span></p>  
+                                <p><span class="font-medium">$26.50 </span><span class="text-gray-500 line-through">$20.50</span></p>
                             </div>
                             <div class="border-b border-gray-200 py-1">
                                 <h1>Adult 13 to 64 years</h1>
-                                <p><span class="font-medium">$26.50 </span><span class="text-gray-500 line-through">$20.50</span></p>  
+                                <p><span class="font-medium">$26.50 </span><span class="text-gray-500 line-through">$20.50</span></p>
                             </div>
                             <div class="border-b border-gray-200 py-1">
                                 <h1>Adult 13 to 64 years</h1>
-                                <p><span class="font-medium">$26.50 </span><span class="text-gray-500 line-through">$20.50</span></p>  
+                                <p><span class="font-medium">$26.50 </span><span class="text-gray-500 line-through">$20.50</span></p>
                             </div>
                             <div class="border-b border-gray-200 py-1">
                                 <h1>Adult 13 to 64 years</h1>
-                                <p><span class="font-medium">$26.50 </span><span class="text-gray-500 line-through">$20.50</span></p>   
-                            </div>
-                        </div>
-                        <div class="buy py-6">
-                            <button class="bg-clip-content bg-transparent bg-gradient-to-r from-primary to-secondary rounded-full">
-                                <span class="px-6 text-white uppercase">buy now</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="w-1/5 bg-white rounded-3xl">
-                    <div class="flex-col text-center">
-                        <div class="title text-white py-1 bg-clip-content bg-transparent bg-gradient-to-r from-primary to-secondary rounded-t-3xl">
-                            <h3 class="uppercase text-md font-medium pt-1">Openbus albania</h3>
-                            <p class="font-light text-xs pb-1">24 hours</p>
-                        </div>
-                        <div class="flex-col">
-                            <div class="border-b border-gray-200 py-1">
-                                <h1>Adult 13 to 64 years</h1>
-                                <p><span class="font-medium">$26.50 </span><span class="text-gray-500 line-through">$20.50</span></p>                            
-                            </div>
-                            <div class="border-b border-gray-200 py-1">
-                                <h1>Adult 13 to 64 years</h1>
-                                <p><span class="font-medium">$26.50 </span><span class="text-gray-500 line-through">$20.50</span></p>                            
-                            </div>
-                            <div class="border-b border-gray-200 py-1">
-                                <h1>Adult 13 to 64 years</h1>
-                                <p><span class="font-medium">$26.50 </span><span class="text-gray-500 line-through">$20.50</span></p>                            
-                            </div>
-                            <div class="border-b border-gray-200 py-1">
-                                <h1>Adult 13 to 64 years</h1>
-                                <p><span class="font-medium">$26.50 </span><span class="text-gray-500 line-through">$20.50</span></p>                            
-                            </div>
-                            <div class="border-b border-gray-200 py-1">
-                                <h1>Adult 13 to 64 years</h1>
-                                <p><span class="font-medium">$26.50 </span><span class="text-gray-500 line-through">$20.50</span></p>                            
+                                <p><span class="font-medium">$26.50 </span><span class="text-gray-500 line-through">$20.50</span></p>
                             </div>
                         </div>
                         <div class="buy py-6">
@@ -159,23 +130,23 @@
                         <div class="flex-col">
                             <div class="border-b border-gray-200 py-1">
                                 <h1>Adult 13 to 64 years</h1>
-                                <p><span class="font-medium">$26.50 </span><span class="text-gray-500 line-through">$20.50</span></p>                            
+                                <p><span class="font-medium">$26.50 </span><span class="text-gray-500 line-through">$20.50</span></p>
                             </div>
                             <div class="border-b border-gray-200 py-1">
                                 <h1>Adult 13 to 64 years</h1>
-                                <p><span class="font-medium">$26.50 </span><span class="text-gray-500 line-through">$20.50</span></p>                            
+                                <p><span class="font-medium">$26.50 </span><span class="text-gray-500 line-through">$20.50</span></p>
                             </div>
                             <div class="border-b border-gray-200 py-1">
                                 <h1>Adult 13 to 64 years</h1>
-                                <p><span class="font-medium">$26.50 </span><span class="text-gray-500 line-through">$20.50</span></p>                            
+                                <p><span class="font-medium">$26.50 </span><span class="text-gray-500 line-through">$20.50</span></p>
                             </div>
                             <div class="border-b border-gray-200 py-1">
                                 <h1>Adult 13 to 64 years</h1>
-                                <p><span class="font-medium">$26.50 </span><span class="text-gray-500 line-through">$20.50</span></p>                            
+                                <p><span class="font-medium">$26.50 </span><span class="text-gray-500 line-through">$20.50</span></p>
                             </div>
                             <div class="border-b border-gray-200 py-1">
                                 <h1>Adult 13 to 64 years</h1>
-                                <p><span class="font-medium">$26.50 </span><span class="text-gray-500 line-through">$20.50</span></p>                            
+                                <p><span class="font-medium">$26.50 </span><span class="text-gray-500 line-through">$20.50</span></p>
                             </div>
                         </div>
                         <div class="buy py-6">
@@ -194,23 +165,58 @@
                         <div class="flex-col">
                             <div class="border-b border-gray-200 py-1">
                                 <h1>Adult 13 to 64 years</h1>
-                                <p><span class="font-medium">$26.50 </span><span class="text-gray-500 line-through">$20.50</span></p>                            
+                                <p><span class="font-medium">$26.50 </span><span class="text-gray-500 line-through">$20.50</span></p>
                             </div>
                             <div class="border-b border-gray-200 py-1">
                                 <h1>Adult 13 to 64 years</h1>
-                                <p><span class="font-medium">$26.50 </span><span class="text-gray-500 line-through">$20.50</span></p>                            
+                                <p><span class="font-medium">$26.50 </span><span class="text-gray-500 line-through">$20.50</span></p>
                             </div>
                             <div class="border-b border-gray-200 py-1">
                                 <h1>Adult 13 to 64 years</h1>
-                                <p><span class="font-medium">$26.50 </span><span class="text-gray-500 line-through">$20.50</span></p>                            
+                                <p><span class="font-medium">$26.50 </span><span class="text-gray-500 line-through">$20.50</span></p>
                             </div>
                             <div class="border-b border-gray-200 py-1">
                                 <h1>Adult 13 to 64 years</h1>
-                                <p><span class="font-medium">$26.50 </span><span class="text-gray-500 line-through">$20.50</span></p>                            
+                                <p><span class="font-medium">$26.50 </span><span class="text-gray-500 line-through">$20.50</span></p>
                             </div>
                             <div class="border-b border-gray-200 py-1">
                                 <h1>Adult 13 to 64 years</h1>
-                                <p><span class="font-medium">$26.50 </span><span class="text-gray-500 line-through">$20.50</span></p>                            
+                                <p><span class="font-medium">$26.50 </span><span class="text-gray-500 line-through">$20.50</span></p>
+                            </div>
+                        </div>
+                        <div class="buy py-6">
+                            <button class="bg-clip-content bg-transparent bg-gradient-to-r from-primary to-secondary rounded-full">
+                                <span class="px-6 text-white uppercase">buy now</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-1/5 bg-white rounded-3xl">
+                    <div class="flex-col text-center">
+                        <div class="title text-white py-1 bg-clip-content bg-transparent bg-gradient-to-r from-primary to-secondary rounded-t-3xl">
+                            <h3 class="uppercase text-md font-medium pt-1">Openbus albania</h3>
+                            <p class="font-light text-xs pb-1">24 hours</p>
+                        </div>
+                        <div class="flex-col">
+                            <div class="border-b border-gray-200 py-1">
+                                <h1>Adult 13 to 64 years</h1>
+                                <p><span class="font-medium">$26.50 </span><span class="text-gray-500 line-through">$20.50</span></p>
+                            </div>
+                            <div class="border-b border-gray-200 py-1">
+                                <h1>Adult 13 to 64 years</h1>
+                                <p><span class="font-medium">$26.50 </span><span class="text-gray-500 line-through">$20.50</span></p>
+                            </div>
+                            <div class="border-b border-gray-200 py-1">
+                                <h1>Adult 13 to 64 years</h1>
+                                <p><span class="font-medium">$26.50 </span><span class="text-gray-500 line-through">$20.50</span></p>
+                            </div>
+                            <div class="border-b border-gray-200 py-1">
+                                <h1>Adult 13 to 64 years</h1>
+                                <p><span class="font-medium">$26.50 </span><span class="text-gray-500 line-through">$20.50</span></p>
+                            </div>
+                            <div class="border-b border-gray-200 py-1">
+                                <h1>Adult 13 to 64 years</h1>
+                                <p><span class="font-medium">$26.50 </span><span class="text-gray-500 line-through">$20.50</span></p>
                             </div>
                         </div>
                         <div class="buy py-6">

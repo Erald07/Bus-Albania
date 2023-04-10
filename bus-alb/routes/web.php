@@ -17,10 +17,15 @@ use Illuminate\Support\Facades\Auth;
 Route::get('/', function () {
     return view('frontend.index');
 });
+Route::get('city', function () {
+    return view('frontend.city');
+});
+Route::get('durres-tour', function () {
+    return view('frontend.tour.tour');
+});
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::middleware(['auth','isAdmin'])->group(function () {
     Route::get('/dashboard', function() {
