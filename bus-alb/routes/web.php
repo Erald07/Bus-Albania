@@ -14,5 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('layouts.frontend.index');
+    return view('frontend.index');
+});
+Route::get('city',function(){
+    return view('frontend.city');
+});
+Route::get('durres-tour',function(){
+    return view('frontend.tour.tour');
 });
