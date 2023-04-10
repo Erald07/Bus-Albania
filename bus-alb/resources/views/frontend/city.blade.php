@@ -7,9 +7,11 @@
         {{-- <nav class="h-[550px] w-full bg-[url('https://www.barcelonabusturistic.cat/themes/custom/tmb/assets/img/layout/bbt-a01-bg-overlay-tablet.jpg')] bg-center bg-cover bg-no-repeat opacity-60"> --}}
             <div class="flex container">
                 <div class="justify-between pt-8 absolute">
-                    <div class="logo">
-                        <h1 class="text-center uppercase bg-clip-text text-transparent bg-white font-extrabold"><span class="text-3xl font-bold">open</span><br><span class="text-5xl font-bold">bus</span><br><span class="text-md text-right font-medium">albania</span></h1>
-                    </div>
+                    <a href="{{ url('/') }}">
+                        <div class="logo">
+                            <h1 class="text-center uppercase bg-clip-text text-transparent bg-white font-extrabold"><span class="text-3xl font-bold">open</span><br><span class="text-5xl font-bold">bus</span><br><span class="text-md text-right font-medium">albania</span></h1>
+                        </div>
+                    </a>
                 </div>
                 <div class="justify-center text-center mx-auto pt-20">
                     <div class=" text-white">
@@ -60,16 +62,16 @@
     <input type="radio" name="position" />
     <input type="radio" name="position" />
     <input type="radio" name="position" />
-  <main id="carousel">
-    <div class="item"><img  class="rounded-md" src="{{asset('assets/images/durrsi1.jpg')}}"></div>
-    <div class="item"><img  class="rounded-md" src="{{asset('assets/images/durrsi1.jpg')}}"></div>
-    <div class="item"><img  class="rounded-md" src="{{asset('assets/images/durrsi1.jpg')}}"></div>
-    <div class="item"><img  class="rounded-md" src="{{asset('assets/images/durrsi1.jpg')}}"></div>
-    <div class="item"><img  class="rounded-md" src="{{asset('assets/images/durrsi1.jpg')}}" width="550" height="650"></div>
-    <div class="item"><img  class="rounded-md" src="{{asset('assets/images/durrsi1.jpg')}}" width="550" height="650"></div>
-    <div class="item"><img  class="rounded-md" src="{{asset('assets/images/durrsi1.jpg')}}" width="550" height="650"></div>
-    <div class="item"><img  class="rounded-md" src="{{asset('assets/images/durrsi1.jpg')}}" width="550" height="650"></div>
-  </main>
+    <main id="carousel">
+        <div class="item"><img  class="rounded-md" src="{{asset('assets/images/durrsi1.jpg')}}"></div>
+        <div class="item"><img  class="rounded-md" src="{{asset('assets/images/durrsi1.jpg')}}"></div>
+        <div class="item"><img  class="rounded-md" src="{{asset('assets/images/durrsi1.jpg')}}"></div>
+        <div class="item"><img  class="rounded-md" src="{{asset('assets/images/durrsi1.jpg')}}"></div>
+        <div class="item"><img  class="rounded-md" src="{{asset('assets/images/durrsi1.jpg')}}" width="550" height="650"></div>
+        <div class="item"><img  class="rounded-md" src="{{asset('assets/images/durrsi1.jpg')}}" width="550" height="650"></div>
+        <div class="item"><img  class="rounded-md" src="{{asset('assets/images/durrsi1.jpg')}}" width="550" height="650"></div>
+        <div class="item"><img  class="rounded-md" src="{{asset('assets/images/durrsi1.jpg')}}" width="550" height="650"></div>
+    </main>
 </div>
 @endsection
 

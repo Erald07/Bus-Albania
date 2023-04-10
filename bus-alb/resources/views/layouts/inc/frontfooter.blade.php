@@ -1,7 +1,9 @@
 <div class="bg-clip-content bg-transparent bg-gradient-to-r from-primary to-secondary opacity-80">
     <div class="flex flex-wrap container py-6 justify-center items-center">
         <div class="w-1/3">
-            <h1 class="uppercase text-white"><span class="text-2xl font-bold">open</span><br><span class="text-4xl font-bold">bus</span><br><span class="text-xs pl-4 font-medium">albania</span></h1>
+            <a href="{{ url('/') }}">
+                <h1 class="uppercase text-white"><span class="text-2xl font-bold">open</span><br><span class="text-4xl font-bold">bus</span><br><span class="text-xs pl-4 font-medium">albania</span></h1>
+            </a>
         </div>
         <div class="w-1/3">
             <div class="flex-col text-center">

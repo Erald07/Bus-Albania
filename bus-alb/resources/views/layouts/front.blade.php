@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="{{ asset('frontend/css/carousel.css') }}">
     <link rel="stylesheet" href="{{ asset('frontend/css/carouselVanilla.css') }}">
 
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    {{-- <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"> --}}
 
     {{-- Google Font --}}
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,11 +36,11 @@
 
     @include('layouts.inc.frontfooter')
     <!-- Scripts -->
-    <script src="{{ asset('frontend/js/jquery-3.6.1.min.js') }}"></script>
-    <script src="{{ asset('frontend/js/owl.carousel.min.js') }}"></script>
+    {{-- <script src="{{ asset('frontend/js/jquery-3.6.1.min.js') }}"></script> --}}
+    {{-- <script src="{{ asset('frontend/js/owl.carousel.min.js') }}"></script> --}}
     <script src="{{ asset('frontend/js/bootstrap.bundle.min.js') }}"></script>
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    {{-- <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> --}}
 
     <script src="{{ asset('frontend/js/carousel.js') }}"></script>
     <script src="{{ asset('frontend/js/carouselVanilla.js') }}"></script>
