@@ -20,7 +20,7 @@
     <div class="mt-16">
         <div class="justify-between flex items-center">
             <div class="flex">
-                <img src="https://www.fragrancetour.com/wp-content/uploads/2020/04/tour-roma-open-bus.jpg" alt="">
+                <img src="{{asset('assets/images/busRoma.jpg')}}" alt="">
             </div>
             <div class="flex">
                 <div class="flex-col py-4 pl-14 pr-24 bg-white ml-8">
@@ -52,19 +52,19 @@
     </div>
     <div class="items">
         <div class="item active">
-            <img src="https://cdn.britannica.com/35/195935-050-456D7CBC/Skanderbeg-Square-Tirana-Albania.jpg">
+            <img src="{{asset('assets/images/carousel1.webp')}}">
         </div>
         <div class=" item next">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/0/06/Tirana_from_South.jpg">
+            <img src="{{asset('assets/images/carousel2.jpg')}}">
         </div>
         <div class="item">
-            <img src="https://www.opengovpartnership.org/wp-content/uploads/2021/04/tirana.jpg">
+            <img src="{{asset('assets/images/carousel3.jpg')}}">
         </div>
         <div class="item">
-            <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/12/24/16/tirana-overview.jpg?quality=75&width=1200&auto=webp">
+            <img src="{{asset('assets/images/carousel4.avif')}}">
         </div>
         <div class="item prev">
-            <img src="https://albaniatourguide.com/wp-content/uploads/2022/01/Tirana-12-shutterstock-large-1.jpg">
+            <img src="{{asset('assets/images/carousel5.jpg')}}">
         </div>
         <div class="button-container">
             <div class="button"><i class="fas fa-angle-left"></i></div>
@@ -283,6 +283,116 @@
         </div>
     </div>
 </div>
+<section class="mt-16 container">
+    <div class="flex flex-wrap justify-between">
+        <div class="w-1/2">
+            <p class="text-xl font-bold	">Open Bus Turistic, On The Hola<br>
+            Open Bus App <br><br></p>
+            <p class="w-96"> visit museum and galleries :Barcelona is home to many world-class museums and galleries,
+            such as the picasso museum ,the joan miro Foundation, and the national Art Museum of Catalonia</p><br>
+            <button  class="w-36 h-10 rounded-2xl text-white bg-gradient-to-r from-secondary to-primary">More details</button>
+        </div>
+        <div class="w-1/2 flex">
+            <div>
+                <img class="max-h-96 flex" src="{{ asset('assets/images/maps.png') }}" alt="maps-image">
+            </div>
+            <div class="text-xl -translate-x-20 translate-y-14  ">
+                <img class="max-h-96 flex rotate-90" src="{{ asset('assets/images/maps.png') }}" alt="maps-image">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section>
+    <div class="bg-gray-100 mt-6">
+        <div class="container">
+            <p class="text-center py-8 text-2xl font-medium underline decoration-secondary">Reviews</p>
+            <div class="flex flex-wrap gap-3 justify-center pb-6">
+                <div class="w-1/5 bg-white justify-center text-center px-2 py-2 border-b-4 border-blue-400 rounded-md">
+                    <div class="py-4">
+                        <img class="w-28 h-28 rounded-full mx-auto" src="{{asset('assets/images/user.jpg')}}" alt="imagesofreview">
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <div>
+                            <i class="fa-sharp fa-solid fa-star" style="color: #dee137;"></i>
+                            <i class="fa-sharp fa-solid fa-star" style="color: #dee137;"></i>
+                            <i class="fa-sharp fa-solid fa-star" style="color: #dee137;"></i>
+                            <i class="fa-sharp fa-solid fa-star" style="color: #dee137;"></i>
+                            <i class="fa-sharp fa-solid fa-star" style="color: #dee137;"></i>
+                        </div>
+                    </div>
+                    <p class="text-sm">visit museum and galleries: Barcelona is home to many world-class museums and galleries,
+                    such as the picasso museum
+                    </p>
+                </div>
+                <div class="w-1/5 bg-white justify-center text-center px-2 py-2 border-b-4 border-blue-400 rounded-md">
+                    <div class="py-4">
+                        <img class=" w-28 h-28 rounded-full mx-auto" src="{{asset('assets/images/user.jpg')}}" alt="imagesofreview">
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <div>
+                            <i class="fa-sharp fa-solid fa-star" style="color: #dee137;"></i>
+                            <i class="fa-sharp fa-solid fa-star" style="color: #dee137;"></i>
+                            <i class="fa-sharp fa-solid fa-star" style="color: #dee137;"></i>
+                            <i class="fa-sharp fa-solid fa-star" style="color: #dee137;"></i>
+                            <i class="fa-sharp fa-solid fa-star" style="color: #dee137;"></i>
+                        </div>
+                    </div>
+                    <p class="text-center text-sm">visit museum and galleries: Barcelona is home to many world-class museums and galleries,
+                    such as the picasso museum
+                    </p>
+                </div>
+                <div class="w-1/5 bg-white justify-center text-center px-2 py-2 border-b-4 border-blue-400 rounded-md">
+                    <div class="py-4">
+                        <img class="w-28 h-28 rounded-full mx-auto" src="{{asset('assets/images/user.jpg')}}" alt="imagesofreview">
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <div>
+                            <i class="fa-sharp fa-solid fa-star" style="color: #dee137;"></i>
+                            <i class="fa-sharp fa-solid fa-star" style="color: #dee137;"></i>
+                            <i class="fa-sharp fa-solid fa-star" style="color: #dee137;"></i>
+                            <i class="fa-sharp fa-solid fa-star" style="color: #dee137;"></i>
+                            <i class="fa-sharp fa-solid fa-star" style="color: #dee137;"></i>
+                        </div>
+                    </div>
+                    <p class="text-center text-sm">visit museum and galleries: Barcelona is home to many world-class museums and galleries,
+                    such as the picasso museum
+                    </p>
+                </div>
+                <div class="w-1/5 bg-white justify-center text-center px-2 py-2 border-b-4 border-blue-400 rounded-md">
+                    <div class="py-4">
+                        <img class="w-28 h-28 rounded-full mx-auto" src="{{asset('assets/images/user.jpg')}}" alt="imagesofreview">
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <div>
+                            <i class="fa-sharp fa-solid fa-star" style="color: #dee137;"></i>
+                            <i class="fa-sharp fa-solid fa-star" style="color: #dee137;"></i>
+                            <i class="fa-sharp fa-solid fa-star" style="color: #dee137;"></i>
+                            <i class="fa-sharp fa-solid fa-star" style="color: #dee137;"></i>
+                            <i class="fa-sharp fa-solid fa-star" style="color: #dee137;"></i>
+                        </div>
+                    </div>
+                    <p class="text-center text-sm">visit museum and galleries: Barcelona is home to many world-class museums and galleries,
+                    such as the picasso museum
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="mt-20 mb-12">
+    <div class="bg-gray-100">
+        <div class="container flex flex-wrap gap-6 justify-center">
+            <img  class="w-1/5 rounded-md" src="{{ asset('assets/images/tirana2.jpg') }}" alt="">
+            <img  class="w-1/5 rounded-md" src="{{ asset('assets/images/tirana6.jpg') }}" alt="">
+            <img  class="w-1/5 rounded-md" src="{{ asset('assets/images/durrsi1.jpg') }}" alt="">
+            <img  class="w-1/5 rounded-md" src="{{ asset('assets/images/tirana4.jpg') }}" alt="">
+        </div>
+    </div>
+</div>
+
 
 @endsection
 

@@ -17,8 +17,8 @@
             <h1 class="uppercase text-5xl font-bold">openbus albania</h1>
             <p class="mt-3">Barcelona is a vibrant and drivers city with a rich history and culture , so there are many ways to <br> get to know it. Here are some suggestions.</p>
         </div>
-        <div class="buy bg-clip-content bg-transparent bg-gradient-to-r from-secondary to-primary rounded-full mt-20 w-[180px] mx-auto text-center">
-            <button class="text-white py-2 px-6 uppercase text-xl font-medium">buy now</button>
+        <div class="buy bg-clip-content bg-gradient-to-r from-secondary to-primary rounded-full mt-20 w-[180px] mx-auto text-center">
+            <button class="text-white py-2 px-6 uppercase text-xl font-medium opacacity-100 z-40">buy now</button>
         </div>
     </nav>
 </nav>

@@ -33,6 +33,7 @@
         @yield('content')
     </div>
 
+    @include('layouts.inc.frontfooter')
     <!-- Scripts -->
     <script src="{{ asset('frontend/js/jquery-3.6.1.min.js') }}"></script>
     <script src="{{ asset('frontend/js/owl.carousel.min.js') }}"></script>
