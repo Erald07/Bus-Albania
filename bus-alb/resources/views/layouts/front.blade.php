@@ -16,6 +16,7 @@
     {{-- Owl Carousel --}}
     <link rel="stylesheet" href="{{ asset('frontend/css/carousel.css') }}">
     <link rel="stylesheet" href="{{ asset('frontend/css/carouselVanilla.css') }}">
+    <link rel="stylesheet" href="{{ asset('frontend/css/custom.css') }}">
 
     {{-- <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"> --}}
 
@@ -44,6 +45,7 @@
 
     <script src="{{ asset('frontend/js/carousel.js') }}"></script>
     <script src="{{ asset('frontend/js/carouselVanilla.js') }}"></script>
+    <script src="{{ asset('frontend/js/custom.js') }}"></script>
 
     @if(session('status'))
         <script>
